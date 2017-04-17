@@ -5,12 +5,15 @@
 		<title>HTML Academy: Глейси</title>
 	</head>
 	<body>
-<!-- Шапка -->
+
+		<!-- Шапка -->
 		<header class="main_header">
 			<div class="container">
-<!-- Первый ряд шапки -->
+
+				<!-- Первый ряд шапки -->
 				<div class="header_top_line">
-<!-- Блок с навигацией -->
+							
+					<!-- Блок с навигацией -->
 					<div class="navigation_block">
 						<img src="http://placehold.it/150x100" alt="Логотип">
 						<nav class="main_navigation">
@@ -44,36 +47,42 @@
 							</ul>
 						</nav>
 					</div>
-<!-- Пользовательский блок -->
+
+					<!-- Пользовательский блок -->
 					<div class="user_block">
-						<a href="#">Поиск</a>
-						<form class="search_form" action="#" method="post">
-							<input type="search" name="search" placeholder="Что ищем?">
-						</form>
-						<a href="#">Вход</a>
-						<form class="login" action="#" method="post">
-							<input type="text" name="email" placeholder="Электронная почта" required>
-							<input type="password" name="password" placeholder="Пароль" required>
-							<button type="submit">Войти</button>
-							<a href="#">Забыли пароль?</a>
-							<a href="#">Новая регистрация</a>
-						</form>
-						<a href="#">Корзина</a>
+						<div class="search">
+							<a href="#">Поиск</a>
+							<form class="search_form" action="#" method="post">
+								<input type="search" name="search" placeholder="Что ищем?">
+							</form>
+						</div>
+						<div class="login">
+							<a href="#">Вход</a>
+							<form class="login_form" action="#" method="post">
+								<input type="text" name="email" placeholder="Электронная почта" required>
+								<input type="password" name="password" placeholder="Пароль" required>
+								<button type="submit">Войти</button>
+								<a href="#">Забыли пароль?</a>
+								<a href="#">Новая регистрация</a>
+							</form>
+						</div>
+						<a href="#">Корзина</a>	
 					</div>
 				</div>
-<!-- Второй ряд шапки -->
+
+				<!-- Второй ряд шапки -->
 				<div class="header_bottom_line">
-					<div class="time_and_phone">
-						<p>С 10 до 20, ежедневно</p>
-						<p>8 812 450-25-25</p>
-					</div>
+					<p>С 10 до 20, ежедневно</p>
+					<p>8 812 450-25-25</p>
 				</div>
 			</div>
 		</header>
-<!-- Основной блок -->
+
+		<!-- Основной блок -->
 		<main>
 			<div class="container">
-<!-- Слайдер -->
+
+				<!-- Слайдер -->
 				<div class="slider">
 					<input type="radio" id="slide_1" name="toggle" checked>
 					<input type="radio" id="slide_2" name="toggle">
@@ -96,7 +105,8 @@
 						<a href="#">Давайте оба!</a>					
 					</div>	
 				</div>
-<!-- Блок с акциями -->
+
+				<!-- Блок с акциями -->
 				<section class="promo">
 					<div class="promo_item_left">
 						<h5>Малинка даром!</h5>
@@ -109,7 +119,8 @@
 						<a href="#">Хочу шоколадки!</a>
 					</div>
 				</section>
-<!-- Блок с хитами продаж -->
+
+				<!-- Блок с хитами продаж -->
 				<section class="best_items">
 					<article class="catalog_item">
 						<a href="#">
@@ -148,15 +159,17 @@
 						</a>
 					</article>
 				</section>
-<!-- Блок преимуществ -->
+
+				<!-- Блок преимуществ -->
 				<section class="features">
 					<h1>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
-					<p class="features_item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-					<p class="features_item">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-					<p class="features_item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-					<p class="features_item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+					<p class="features_technology">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+					<p class="features_partners">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+					<p class="features_ingredient">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+					<p class="features_delivery">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
 				</section>
-<!-- Блок новости и подписка -->
+
+				<!-- Блок новости и подписка -->
 				<div class="news">
 					<div class="news_item_left">
 						<p>Новое в нашем блоге</p>
@@ -172,7 +185,8 @@
 				</div>
 			</div>
 		</main>
-<!-- Карта и контактная информация -->
+
+		<!-- Карта и контактная информация -->
 		<section class="map_and_contacts">
 			<div class="contacts">
 				<p>Адрес главного офиса и офлайн магазина:
@@ -182,24 +196,27 @@
 					<span>8 812 450-25-25</span>
 					(с 10 до 20 ежедневно)
 				</p>
-				<a href="#">Форма обратной связи</a>
-				<form class="feedback_form" action="#" method="post">
-					<p>Мы обязательно вам ответим!</p>
-					<input type="text" name="feedback_name" placeholder="Как вас зовут?">
-					<input type="text" name="feedback_name" placeholder="Ваша почта для ответа">
-					<textarea name="feedback_text" placeholder="Напишите что-нибудь..."></textarea>
-					<button type="submit">Отправить</button>
-				</form>
+				<div class="feedback">
+					<a href="#">Форма обратной связи</a>
+					<form class="feedback_form" action="#" method="post">
+						<p>Мы обязательно вам ответим!</p>
+						<input type="text" name="feedback_name" placeholder="Как вас зовут?">
+						<input type="text" name="feedback_name" placeholder="Ваша почта для ответа">
+						<textarea name="feedback_text" placeholder="Напишите что-нибудь..."></textarea>
+						<button type="submit">Отправить</button>
+					</form>
+				</div>
 			</div>
 		</section>
-<!-- Подвал страницы -->
+
+		<!-- Подвал страницы -->
 		<footer class="main_footer">
 			<div class="container">
 				<section class="footer_socials">
-					<a class="social_btn	social_btn_tw" href="#">Твиттер</a>
-					<a class="social_btn	social_btn_inst" href="#">Инстаграм</a>
-					<a class="social_btn	social_btn_fb" href="#">Фейсбук</a>
-					<a class="social_btn	social_btn_vk" href="#">Вконтакте</a>
+					<a class="social_btn social_btn_tw" href="#">Твиттер</a>
+					<a class="social_btn social_btn_inst" href="#">Инстаграм</a>
+					<a class="social_btn social_btn_fb" href="#">Фейсбук</a>
+					<a class="social_btn social_btn_vk" href="#">Вконтакте</a>
 				</section>
 				<section class="footer_about_us">
 					<a href="#">Для поставщиков</a>
