@@ -1,0 +1,26 @@
+﻿body {
+	font-size: 16px;
+	line-height: 22px;
+	color: #323232;
+	font-family: "Roboto", "Arial", sans-serif;
+}
+
+.slide_title {
+	font-size: 60px;
+	line-height: 60px;
+	/*color: #ffffff пока не назначен ради читабельности*/
+	font-weight: 900;
+}
+
+.promo_title {
+	font-size: 35px;
+	line-height: 41px;
+	/*color: #ffffff пока не назначен ради читабельности*/
+	font-weight: 900;
+}
+
+.features_title {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 500;
+}
