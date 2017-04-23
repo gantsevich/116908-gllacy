@@ -1,4 +1,5 @@
 ﻿/*Общие стили*/
+
 *, *::before, *::after {
 	box-sizing: inherit;
 }
@@ -8,7 +9,6 @@ html {
 }
 
 body {
-	min-width: 1200px;
 	margin: 0;
 	padding-top: 0;
 
@@ -81,8 +81,9 @@ body {
 /*Центровщик*/
 
 .container {
-	width: 1146px;
+	width: 1200px;
 	margin: 0 auto;
+	padding: 0 27px;
 }
 
 /*Стили для шапки*/
@@ -105,14 +106,8 @@ body {
 
 .navigation_block {
 	display: flex;
-	width: 560px;
-
+	
 	outline: 1px solid green;
-}
-
-.main_navigation {
-	width: 406px;
-	outline: 1px solid blue;
 }
 
 .main_menu {
@@ -121,6 +116,11 @@ body {
 	padding: 0;
 
 	list-style: none;
+}
+
+.main_menu li {	
+	margin-left: 25px;
+	outline: 1px solid blue;
 }
 
 .catalog_submenu {
@@ -132,9 +132,12 @@ body {
 .user_block {
 	display: flex;
 	justify-content: space-between;
-	width: 267px;
 
 	outline: 1px solid green;
+}
+
+.user_block a {
+	margin-left: 10px;
 }
 
 .search form {
@@ -158,13 +161,15 @@ body {
 /*Слайдер*/
 
 .slider {
-	display: flex;
 	min-height: 530px; /*Временно*/
+	text-align: center;
 
 	outline: 1px solid red;
 }
 
- /*Временно*/
+.slider input {
+	display: none;
+}
 
 .slide {
 	display: none;
@@ -175,6 +180,7 @@ body {
 
 	outline: 1px solid black;
 }
+
 
 /*Промо блок*/
 
@@ -247,9 +253,6 @@ body {
 /*Карта*/
 
 .map_and_contacts {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
 	min-height: 430px; /*Временно*/
 
 	outline: 1px solid black;
@@ -267,15 +270,18 @@ body {
 
 /*Хлебные крошки*/
 
-.breadcrumbs ul {
+.breadcrumbs {
 	display: flex;
-	width: 560px;
 	margin: 0;
 	padding: 0;
 
 	list-style: none;
 
 	outline: 1px solid green;
+}
+
+.breadcrumbs li {
+	margin-right: 20px;
 }
 
 /*Форма с фильтром*/
@@ -287,18 +293,22 @@ body {
 .assortment {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	width: 880px;
 	min-height: 135px; /*Временно*/ 
 
 	outline: 1px solid red;
 }
 
 .assortment fieldset {
-	min-width: 415px;
 	padding: 0;
 }
 
+.assortment label {
+	margin-right: 20px;
+}
+
+.assortment button {
+	margin-left: 15px;
+}
 
 /*Каталог*/
 
@@ -335,7 +345,5 @@ body {
 
 .footer_socials, 
 .footer_copyright {
-	width: 267px;
-	
 	outline: 1px solid black;
 }
