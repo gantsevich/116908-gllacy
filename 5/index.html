@@ -33,7 +33,7 @@
 											<a class="sub_news" href="#">Новинки</a>
 										</li>
 										<li>
-											<a href="#">Сливочное</a>
+											<a href="catalog.html">Сливочное</a>
 										</li>
 										<li class="current">
 											<a href="#">Щербеты</a>
@@ -75,7 +75,7 @@
 							</form>
 						</div>
 						<div class="cart">
-						<a class="cart_link" href="#">Корзина</a>	
+						<a class="cart_link" href="#">Пусто</a>	
 						</div>
 					</div>
 				</div>
@@ -135,52 +135,60 @@
 						<article class="catalog_item">
 							<a href="#">
 								<img src="img/catalog_item_1.png" width="267" height="267" alt="Фото товара">
-								<div>
+								<div class="item_price_weight">
 									<span class="item_price">310</span>
 									<span class="item_weight">/кг</span>
 								</div>
 								<span class="item_name">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
-								<p class="btn">Быстрый просмотр</p>
+								<div class="catalog_item_hover">
+									<p class="btn">Быстрый просмотр</p>
+								</div>
 							</a>
 						</article>
 						<article class="catalog_item">
 							<a href="#">
 								<img src="img/catalog_item_2.png" width="267" height="267" alt="Фото товара">
-								<div>
+								<div class="item_price_weight">
 									<span class="item_price">380</span>
 									<span class="item_weight">/кг</span>
 								</div>
 								<span class="item_name">Сливочно-кофейное с кусочками шоколада</span>
-								<p class="btn">Быстрый просмотр</p>
+								<div class="catalog_item_hover">
+									<p class="btn">Быстрый просмотр</p>
+								</div>
 							</a>
 						</article>
 						<article class="catalog_item">
 							<a href="#">
 								<img src="img/catalog_item_3.png" width="267" height="267" alt="Фото товара">
-								<div>
+								<div class="item_price_weight">
 									<span class="item_price">355</span>
 									<span class="item_weight">/кг</span>
 								</div>
 								<span class="item_name">Сливочно-клубничное с присыпкой из белого шоколада</span>
-								<p class="btn">Быстрый просмотр</p>
+								<div class="catalog_item_hover">
+									<p class="btn">Быстрый просмотр</p>
+								</div>
 							</a>
 						</article>
 						<article class="catalog_item">
 							<a href="#">
 								<img src="img/catalog_item_4.png" width="267" height="267" alt="Фото товара">
-								<div>
+								<div class="item_price_weight">
 									<span class="item_price">415</span>
 									<span class="item_weight">/кг</span>
 								</div>
 								<span class="item_name">Сливочное крем-брюле с карамельной подливкой</span>
-								<p class="btn">Быстрый просмотр</p>
+								<div class="catalog_item_hover">
+									<p class="btn">Быстрый просмотр</p>
+								</div>
 							</a>
 						</article>
 					</section>
 
 					<!-- Блок преимуществ -->
 					<section class="features">
-						<h1 class="features_title">Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
+						<h1 class="features_title">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
 						<p class="features_technology">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
 						<p class="features_partners">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
 						<p class="features_ingredient">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
@@ -191,7 +199,7 @@
 					<div class="news">
 						<div class="news_item_left">
 							<p>Новое в нашем блоге</p>
-							<a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+							<a href="#">10 &nbsp;способов сервировки фруктовых щербетов к столу</a>
 						</div>
 						<div class="news_item_right">
 							<div class="news_item_right_wrapper">
@@ -208,25 +216,14 @@
 
 			<!-- Карта и контактная информация -->
 			<section class="map_and_contacts">
-				<div class="container">
-					<div class="contacts">
-						<p class="contacts_first_title">Адрес главного офиса и офлайн магазина:</p>
-						<p class="contacts_adress">ул. Большая Конюшенная 19/8б Санкт-Петербург</p>
-						<p class="contacts_second_title">Для заказов по телефону:</p>
-						<p class="contacts_phone">8 812 450-25-25</p>
-						<p class="contacts_work_time">(с 10 до 20 ежедневно)</p>
-						<a class="btn" href="#">Форма обратной связи</a>
-						<div class="feedback">
-							<form class="feedback_form" action="#" method="post">
-								<button class="feedback_form_close" type="button"></button>
-								<p>Мы обязательно вам ответим!</p>
-								<input type="text" name="feedback_name" placeholder="Как вас зовут?">
-								<input type="text" name="feedback_name" placeholder="Ваша почта для ответа">
-								<textarea name="feedback_text" placeholder="Напишите что-нибудь..."></textarea>
-								<button class="btn" type="submit">Отправить</button>
-							</form>
-						</div>
-				</div>
+				<div class="map" id="map"></div>
+				<div class="contacts">
+					<p class="contacts_first_title">Адрес главного офиса и офлайн магазина:</p>
+					<p class="contacts_adress">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+					<p class="contacts_second_title">Для заказов по телефону:</p>
+					<p class="contacts_phone">8 812 450-25-25</p>
+					<p class="contacts_work_time">(с 10 до 20 ежедневно)</p>
+					<a class="btn feedback_btn" href="#">Форма обратной связи</a>
 				</div>
 			</section>
 
@@ -243,7 +240,7 @@
 						<section class="footer_about_us">
 							<ul>
 								<li>
-									<a href="#">Для поставщиков</a>
+									<a class="main_footer_link" href="#">Для поставщиков</a>
 								</li>
 								<li>
 									<a href="#">Наши документы</a>
@@ -263,6 +260,20 @@
 					</div>
 				</div>		
 			</footer>
+			<div class="feedback">
+				<form class="feedback_form" action="#" method="post">
+					<button class="feedback_form_close" type="button"></button>
+					<p>Мы обязательно вам ответим!</p>
+					<input type="text" name="feedback_name" placeholder="Как вас зовут?">
+					<input type="text" name="feedback_email" placeholder="Ваша почта для ответа?">
+					<textarea name="feedback_text" placeholder="Напишите что-нибудь..."></textarea>
+					<button class="btn" type="submit">Отправить</button>
+				</form>
+				<div class="feedback_overlay"></div>
+			</div>
 		</div>
+		<script src="js/script.js" type="text/javascript"></script>
+		<script src="https://api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+		<script src="js/map.js" type="text/javascript"></script>
 	</body>
 </html>
