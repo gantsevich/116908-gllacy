@@ -215,15 +215,14 @@
 
 			<!-- Карта и контактная информация -->
 			<section class="map_and_contacts">
-				<div class="container">
-					<div class="contacts">
-						<p class="contacts_first_title">Адрес главного офиса и офлайн магазина:</p>
-						<p class="contacts_adress">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-						<p class="contacts_second_title">Для заказов по телефону:</p>
-						<p class="contacts_phone">8 812 450-25-25</p>
-						<p class="contacts_work_time">(с 10 до 20 ежедневно)</p>
-						<a class="btn" href="#">Форма обратной связи</a>
-				</div>
+				<iframe src="https://api-maps.yandex.ru/frame/v1/-/C6qCqTOS" width="100%" height="430" frameborder="0"></iframe>
+				<div class="contacts">
+					<p class="contacts_first_title">Адрес главного офиса и офлайн магазина:</p>
+					<p class="contacts_adress">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+					<p class="contacts_second_title">Для заказов по телефону:</p>
+					<p class="contacts_phone">8 812 450-25-25</p>
+					<p class="contacts_work_time">(с 10 до 20 ежедневно)</p>
+					<a class="btn feedback_btn" href="#">Форма обратной связи</a>
 				</div>
 			</section>
 
@@ -265,11 +264,13 @@
 					<button class="feedback_form_close" type="button"></button>
 					<p>Мы обязательно вам ответим!</p>
 					<input type="text" name="feedback_name" placeholder="Как вас зовут?">
-					<input type="text" name="feedback_name" placeholder="Ваша почта для ответа?">
+					<input type="text" name="feedback_email" placeholder="Ваша почта для ответа?">
 					<textarea name="feedback_text" placeholder="Напишите что-нибудь..."></textarea>
 					<button class="btn" type="submit">Отправить</button>
 				</form>
+				<div class="feedback_overlay"></div>
 			</div>
 		</div>
+		<script src="js/script.js"></script>
 	</body>
 </html>
