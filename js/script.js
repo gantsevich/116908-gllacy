@@ -24,6 +24,8 @@ var close = popup.querySelector(".feedback_form_close");
 
 var form = popup.querySelector(".feedback_form");
 
+var overlay = document.querySelector(".feedback_overlay");
+
 var username = popup.querySelector("[name=feedback_name]");
 var usermail = popup.querySelector("[name=feedback_email]");
 var message = popup.querySelector("[name=feedback_text]");
@@ -34,6 +36,7 @@ var storageMail = localStorage.getItem("usermail");
 link.addEventListener("click", function(event) {
 	event.preventDefault();
 	popup.classList.add("feedback_show");
+	overlay.classList.add("feedback_overlay_show");
 
 	if (storageName || storageMail) {
 		username.value = storageName;
@@ -44,6 +47,7 @@ link.addEventListener("click", function(event) {
 close.addEventListener("click", function(event) {
 	event.preventDefault();
 	popup.classList.remove("feedback_show");
+	overlay.classList.remove("feedback_overlay_show");
 	popup.classList.remove("feedback_error");
 });
 
@@ -61,9 +65,10 @@ form.addEventListener("submit", function(event) {
 
 window.addEventListener("keydown", function(event) {
 	if (event.keyCode === 27) {
-		if(popup.classList.contains("feedback_show")) {
+		if(popup.classList.contains("feedback_show") || overlay.classList.contains("feedback_overlay_show") ) {
 			popup.classList.remove("feedback_show");
 			popup.classList.remove("feedback_error");
+			overlay.classList.remove("feedback_overlay_show");
 		}
 	}
 });

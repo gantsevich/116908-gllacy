@@ -345,8 +345,9 @@ body > input[type="radio"] {
 
 .cart_items .cross_btn {
 	position: relative;
-	width: 10px;
-	height: 10px;
+	width: 14px;
+	height: 14px;
+	margin-top: 3px;
 
 	background: #f8f7f4;
 	border: none;
@@ -356,11 +357,11 @@ body > input[type="radio"] {
 .cart_items .cross_btn::before {
 	content: "";
 	position: absolute;
-	top: 2px;
+	top: 3px;
 	left: 6px;
 
 	width: 1px;
-	height: 16px;
+	height: 14px;
 
 	background: #323232;
 	-webkit-transform: rotate(45deg);
@@ -370,11 +371,11 @@ body > input[type="radio"] {
 .cart_items .cross_btn::after {
 	content: "";
 	position: absolute;
-	top: 2px;
-	left: 5px;
+	top: 3px;
+	left: 6px;
 
 	width: 1px;
-	height: 16px;
+	height: 14px;
 
 	background: #323232;
 	-webkit-transform: rotate(135deg);
@@ -821,7 +822,7 @@ a:active span.underlined {
 	width: 26px;
 	height: 26px;
 	margin-left: -1px;
-	padding: 4px 0;
+	padding: 4px 8px;
 
 	color: #ffffff;
 	font-size: 16px;
@@ -1334,7 +1335,7 @@ a:active span.underlined {
 	justify-content: space-between;
 	-webkit-box-align: start;
 	-ms-flex-align: start;
-	lign-items: flex-start;
+	align-items: flex-start;
 	margin-bottom: 40px;
 }
 
@@ -1594,9 +1595,10 @@ a:active span.underlined {
 
 .map_and_contacts {
 	position: relative;
-	min-height: 436px;
+	min-height: 430px;
 
 	background: url("../img/map.png") no-repeat center;
+	background-size: 100%;
 }
 
 .map {
@@ -1607,10 +1609,11 @@ a:active span.underlined {
 .contacts {
 	position: absolute;
 	top: 61px;
-	right: 58px;
+	right: 50%;
 
 	width: 302px;
 	margin: 0;
+	margin-right: -573px;
 	padding: 0 25px;
 	padding-top: 30px;
 	padding-bottom: 34px;
@@ -1623,7 +1626,7 @@ a:active span.underlined {
 
 .feedback {
 	position: absolute;
-	top: 338px;
+	top: calc(50vh - 222px);
 	left: 50%;
 
 	display: none;
@@ -1650,10 +1653,16 @@ a:active span.underlined {
 	left: 0;
 	z-index: 50;
 
+	display: none;
+
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 
 	background: rgba(0, 0, 0, 0.3);
+}
+
+.feedback_overlay_show {
+	display: block;
 }
 
 .feedback_show {
@@ -2199,6 +2208,7 @@ a:active span.underlined {
 /*Пагинация*/
 
 .pagination {
+	margin-bottom: 6px;
 	padding-bottom: 30px;
 
 	text-align: right;
@@ -2209,6 +2219,7 @@ a:active span.underlined {
 /*Подвал*/
 
 .main_footer {
+	margin-top: 7px;
 	padding-bottom: 25px;
 }
 
