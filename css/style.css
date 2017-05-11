@@ -42,8 +42,6 @@ body > input[type="radio"] {
 	padding: 0 27px;
 }
 
-/*Шрифты*/
-
 .main_menu_item span.underlined {
 	border-bottom: 1px solid rgba(255,255,255,.3);
 }
@@ -503,7 +501,7 @@ body > input[type="radio"] {
 
 .catalog_item .btn {
 	position: absolute;
-	bottom: 22px;
+	bottom: 16px;
 	left: 47px;
 
 	display: inline-block;
@@ -513,7 +511,7 @@ body > input[type="radio"] {
 
 /*Ссылки*/
 
-/*Сылки меню пользователя*/
+/*Ссылки меню пользователя*/
 
 .login_link,
 .search_link,
@@ -614,7 +612,7 @@ body > input[type="radio"] {
 	background: url("../img/sprite.png") no-repeat 0 -69px;
 }
 
-/*Сылки меню пользователя при наведении*/
+/*Ссылки меню пользователя при наведении*/
 
 .search_link:hover,
 .login_link:hover {
@@ -1295,7 +1293,6 @@ a:active span.underlined {
 	background: transparent;
 	border: 2px solid #ffffff;
 	border-radius: 50%;
-	cursor: pointer;
 }
 
 #slide_btn_1:checked ~ .site_wrapper #slide_1,
@@ -1442,7 +1439,7 @@ a:active span.underlined {
 	z-index: 1;
 
 	width: 294px;
-	height: calc(100% + 80px);
+	height: calc(100% + 87px);
 	display: none;
 
 	background: rgba(255, 255, 255, 0.3);
@@ -1677,20 +1674,36 @@ a:active span.underlined {
 .feedback_form input {
 	min-width: 267px;
 	margin-top: 2px;
-	margin-bottom: 16px;
+	margin-bottom: 18px;
 	padding-left: 13px;
-	padding-top: 12px;
+	padding-top: 10px;
 	padding-bottom: 8px;
 
 	font-size: 16px;
 	line-height: 24px;
-	font-weight: 400;
+	font-weight: 700;
 	color: #999999;
 	font-family: "Roboto", "Arial", sans-serif;
 
 	border: 1px solid #999999;
 	border-radius: 5px;
 	outline: none;
+}
+
+.feedback_form input::placeholder {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #999999;
+	font-family: "Roboto", "Arial", sans-serif;
+}
+
+.feedback_form input:hover {
+	border: 2px solid;
+}
+
+.feedback_form input:active {
+	border: 2px solid #8fbdec;
 }
 
 .feedback_form textarea {
@@ -2025,6 +2038,8 @@ a:active span.underlined {
 	line-height: 18px;
 	font-weight: 500;
 	vertical-align: baseline;
+
+	cursor: pointer;
 }
 
 .assortment_fat label:last-child {
@@ -2117,6 +2132,8 @@ a:active span.underlined {
 
 	line-height: 18px;
 	font-weight: 500;
+
+	cursor: pointer;
 }
 
 .assortment_topping label:last-child {
