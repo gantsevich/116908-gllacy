@@ -122,18 +122,16 @@
 				<!--Форма с фильтрами-->
 				<div class="filter">
 					<form class="assortment" action="#" method="post">
-						<label class="assortment_select">
-							<p>Сортировка:</p>
-							<div class="select_outer">
-								<select class="select_inner">
-									<option>по популярности</option>
-									<option>сначала недорогие</option>
-									<option>сначала дорогие</option>
-									<option>по жирности</option>
-								</select>
-								<a class="select_button"></a>
-							</div>
-						</label>
+						<label class="select_title" for="assortment_select">Сортировка:</label>
+						<div class="select_outer">
+							<select class="select_inner" id="assortment_select">
+								<option>по популярности</option>
+								<option>сначала недорогие</option>
+								<option>сначала дорогие</option>
+								<option>по жирности</option>
+							</select>
+							<a class="select_button"></a>
+						</div>
 						<div class="range_filter">
 							<div class="price_controls">
 								<span>Цена:</span>
@@ -381,7 +379,7 @@
 						</ul>
 					</section>
 					<section class="footer_copyright">
-						<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html_academy_logo.png" width="108" height="38" alt="Html Academy"></a>
+						<a class="copyright_link_hidden" href="https://htmlacademy.ru/intensive/htmlcss">Html-Academy<img src="img/html_academy_logo.png" width="108" height="38" alt="Html Academy"></a>
 						<p>Сделано в <a class="copyright_link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
 					</section>
 				</div>
