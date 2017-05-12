@@ -8,14 +8,11 @@
 		<link href="css/style.min.css" rel="stylesheet">
 	</head>
 	<body>
-
 		<!-- Шапка -->
 		<header class="main_header">
 			<div class="container">
-
 				<!-- Первый ряд шапки -->
-				<div class="header_top_line">
-							
+				<div class="header_top_line">							
 					<!-- Блок с навигацией -->
 					<div class="navigation_block">
 						<a href="index.html"><img src="img/gllacy_logo.png" width="154" height="64" alt="Логотип"></a>
@@ -50,7 +47,6 @@
 							</ul>
 						</nav>
 					</div>
-
 					<!-- Пользовательский блок -->
 					<div class="user_block">
 						<div class="search">
@@ -96,7 +92,6 @@
 						</div>	
 					</div>
 				</div>
-
 				<!-- Второй ряд шапки -->
 				<div class="header_bottom_line">
 					<p class="header_work_time">С 10 до 20, ежедневно</p>
@@ -104,7 +99,6 @@
 				</div>
 			</div>
 		</header>
-
 		<!-- Основной блок -->
 		<main>
 			<div class="container">
@@ -118,22 +112,19 @@
 					<li>Сливочное</li>
 				</ul> 
 				<h1 class="inner_page_title">Сливочное мороженое</h1>
-
 				<!--Форма с фильтрами-->
 				<div class="filter">
 					<form class="assortment" action="#" method="post">
-						<label class="assortment_select">
-							<p>Сортировка:</p>
-							<div class="select_outer">
-								<select class="select_inner">
-									<option>по популярности</option>
-									<option>сначала недорогие</option>
-									<option>сначала дорогие</option>
-									<option>по жирности</option>
-								</select>
-								<a class="select_button"></a>
-							</div>
-						</label>
+						<label class="select_title" for="assortment_select">Сортировка:</label>
+						<div class="select_outer">
+							<select class="select_inner" id="assortment_select">
+								<option>по популярности</option>
+								<option>сначала недорогие</option>
+								<option>сначала дорогие</option>
+								<option>по жирности</option>
+							</select>
+							<a class="select_button"></a>
+						</div>
 						<div class="range_filter">
 							<div class="price_controls">
 								<span>Цена:</span>
@@ -180,7 +171,6 @@
 						<button type="submit">Применить</button>
 					</form>
 				</div>
-
 				<!-- Каталог -->
 				<section class="catalog_items">
 					<article class="catalog_item">
@@ -340,7 +330,6 @@
 						</a>
 					</article>
 				</section>
-
 				<!-- Пагинация -->
 				<div class="pagination">
 					<a class="previous" href="#">Назад</a>
@@ -353,7 +342,6 @@
 				</div>
 			</div>
 		</main>
-
 		<!-- Подвал сайта -->
 		<footer class="main_footer">
 			<div class="container">
@@ -381,7 +369,7 @@
 						</ul>
 					</section>
 					<section class="footer_copyright">
-						<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html_academy_logo.png" width="108" height="38" alt="Html Academy"></a>
+						<a class="copyright_link_hidden" href="https://htmlacademy.ru/intensive/htmlcss">Html-Academy<img src="img/html_academy_logo.png" width="108" height="38" alt="Html Academy"></a>
 						<p>Сделано в <a class="copyright_link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
 					</section>
 				</div>
