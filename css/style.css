@@ -1299,6 +1299,11 @@ a:active span.underlined {
 }
 
 .item_name {
+	margin: 0;
+	padding: 0 6px;
+}
+
+.item_name_underlined {
 	position: relative;
 	z-index: 2;
 
@@ -1365,7 +1370,7 @@ a:active span.underlined {
 	z-index: 2;
 }
 
-.catalog_item:hover .item_name {
+.catalog_item:hover .item_name_underlined {
 	border: none;
 }
 
